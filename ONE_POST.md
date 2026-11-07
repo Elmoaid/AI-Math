@@ -26,7 +26,4 @@ Proof sketch: A = ½ Σ sᵢhᵢ with hᵢ ≥ r gives the lower bound. For the 
 
 Status: nearest published results (Zeng–Dong, arXiv:2306.15208; Chouikha, arXiv:math/0103210) cover polygons circumscribed about or inscribed in a circle; this version is for any convex polygon. Likely folklore.
 
-## 3. A heuristic tweak that didn't really work, measured properly
-
-Adding a bending penalty λ·Σ |eᵢ||eᵢ₊₁|·sin(turnᵢ) to the tour length during 2-opt on random Euclidean instances, then removing it, was reported early on to "halve 2-opt's excess". Reimplemented and measured against LKH-3 optima on 400/200/200 instances at n = 35/70/140: it cuts plain 2-opt's excess by 3–19%, costs 2–3× the time, loses to equal-time restarts, and Or-opt beats it by 2–4×. Known family: landscape smoothing, guided local search, angular-metric turn costs.
 
